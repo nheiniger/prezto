@@ -12,7 +12,7 @@ fi
 
 # Use vim :)
 export EDITOR=/usr/bin/vim
+export VISUAL="$EDITOR"
 
-# Work proxy
-export http_proxy=http://NOT.SHOWN.HERE:MYPORT
-export https_proxy=$http_proxy
+# Include private configs
+source ~/.zprezto/runcoms/private
