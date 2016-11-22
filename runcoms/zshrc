@@ -10,6 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Add to path
+export PATH="$PATH:/usr/sbin"
+
 # Use vim :)
 export EDITOR=/usr/bin/vim
 export VISUAL="$EDITOR"
