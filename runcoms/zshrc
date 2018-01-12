@@ -16,3 +16,6 @@ export VISUAL="$EDITOR"
 
 # Include private configs
 source ~/.zprezto/runcoms/private
+
+# Use custom sslyze version
+export PATH=/opt/sslyze/:$PATH
