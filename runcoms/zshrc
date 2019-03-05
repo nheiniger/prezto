@@ -26,3 +26,9 @@ SAVEHIST=10000
 HISTFILE=~/.zhistory
 bindkey -v
 bindkey "^R" history-incremental-pattern-search-backward
+
+# test if script is already started by this process, if not log all the things
+PROCESS=`ps -ocommand= -p $PPID | awk '{print $1}'`
+if [ "$PROCESS" != "script" ]; then
+    script -f ~/scriptlog_`date +%Y%m%d_%H%M%S`.txt
+fi
