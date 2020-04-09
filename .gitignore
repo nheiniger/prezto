@@ -3,3 +3,4 @@
 *.swp
 runcoms/private
 modules/*/cache.zsh
+contrib
