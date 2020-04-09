@@ -11,7 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Add to path
-export PATH="$PATH:/usr/sbin"
+export PATH="$PATH:/usr/sbin:/snap/bin:/home/jsmith/go/bin"
 
 # Use vim :)
 export EDITOR=/usr/bin/vim
